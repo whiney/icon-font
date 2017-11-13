@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css sprite</title>
+    <!--引入font awesome 字体库-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+
+        /* css sprite 定位 */
+        .bg{
+            margin:0 auto;
+            background: url("images/css_sprites .png");
+        }
+        .bg-9 {
+            width: 262px; height: 156px;
+            background-position: -10px -10px;
+        }
+
+        .bg-10 {
+            width: 246px; height: 150px;
+            background-position: -292px -10px;
+        }
+        .content{
+            width: 50%;
+            margin:0 auto;
+            border: 1px solid;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>雪碧图</h1>
+        <div class="bg bg-9"></div>
+        <div class="bg bg-10"></div>
+    </div>
+
+    <div class="content">
+        <h1>图标字体</h1>
+        <i class="fa fa-camera-retro fa-lg"></i> fa-lg
+        <i class="fa fa-camera-retro fa-2x"></i> fa-2x
+        <i class="fa fa-camera-retro fa-3x"></i> fa-3x
+        <i class="fa fa-camera-retro fa-4x"></i> fa-4x
+        <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+    </div>
+</body>
+</html>
